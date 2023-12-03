@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.sign {
+    width: 300px;
+    background: #fff;
+    padding: 20px;
+    margin: 70px auto 0;
+    text-align: center;
+}
+
+.sign h1 {
+    color: black;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.sign p {
+    color: #0c0c0c;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.h-text {
+    margin-top: -20px;
+}
+
+a {
+    text-decoration: none;
+    color: #0044ff;
+}
+
+.input-box {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 2px solid;
+    outline: none;
+}
+
+button {
+    color: #000;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .5s;
+}
+
+button:hover {
+    background: #b3adad;
+    transition: .5s;
+    color: #000;
+}
+
+.sing {
+    background: black;
+    color: #fff;
+}
+
+hr {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.pan {
+    background: #fff;
+    color: #000;
+    width: 30px;
+    margin: -13px auto 10px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RENSPONSIVE WEPBAGE */
+
+/* MEDIA SCREEN FOR ALL */
+
+@media screen and (max-width:1487px) {
+    body {
+        background-color: black;
+        background-image: none;
+        background-position: none;
+        background-repeat: none;
+        background-size: none;
+        color: white;
+    }
+
+    .head {
+        padding: 20px 5%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: transparent;
+        width: 100%;
+        color: white;
+        font-size: 23px;
+        z-index: 100;
+        align-items: center;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .logo {
+        position: relative;
+        font-size: 36px;
+        color: rgb(6, 131, 213);
+        text-decoration: none;
+        margin-top: 9px;
+        font-family: cursive;
+        font-weight: 600;
+        margin-left: -20px;
+        transition: .5s;
+    }
+
+    .navbar a {
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 20px;
+        margin: auto;
+        font-family: Goudy Old Style,
+            Garamond,
+            Hoefler Text,
+            Georgia,
+            serif;
+        gap: 25px;
+        float: left;
+        margin-left: 30px;
+        margin-top: 15px;
+        transition: .5s;
+        color: aliceblue;
+    }
+
+
+    .navbar a:hover,
+    .navbar a.active {
+        color: #ff7200;
+        transition: .5s;
+    }
+
+
+}
+
+
+
+
+/* MEDIA SCREEN FOR 300 TO 500PX */
+
+@media screen and (min-width:300px) and (max-width:500px) {
+    .head {
+        padding: 20px 5%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: transparent;
+        width: 100%;
+        color: white;
+        font-size: 23px;
+        z-index: 100;
+        align-items: center;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .logo {
+        display: none;
+        position: relative;
+        font-size: 16px;
+        color: rgb(6, 131, 213);
+        text-decoration: none;
+        margin-top: 9px;
+        font-family: cursive;
+        font-weight: 600;
+        margin-left: -20px;
+        transition: .5s;
+    }
+
+    .navbar a {
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15.5px;
+        margin: auto;
+        font-family: Goudy Old Style,
+            Garamond,
+            Hoefler Text,
+            Georgia,
+            serif;
+        ;
+        gap: 25px;
+        float: left;
+        margin-left: 23px;
+        margin-top: 15px;
+        transition: .5s;
+        color: rgb(240, 254, 255);
+    }
+
+
+    .navbar a:hover,
+    .navbar a.active {
+        color: #ffd000;
+        transition: .5s;
+    }
+
+
+}
+
+/* MEDIA SCREEN FOR 500 TO 700PX */
+
+@media screen and (min-width:500px) and (max-width:700px) {
+
+    .logo {
+        position: relative;
+        font-size: 25px;
+        color: #d73b06;
+        text-decoration: none;
+        margin-top: 9px;
+        font-family: cursive;
+        font-weight: 600;
+        margin-left: -20px;
+        transition: .5s;
+    }
+
+    .navbar a {
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        margin: auto;
+        font-family: Goudy Old Style,
+            Garamond,
+            Hoefler Text,
+            Georgia,
+            serif;
+        ;
+        gap: 25px;
+        float: left;
+        margin-left: 23px;
+        margin-top: 15px;
+        transition: .5s;
+        color: rgb(240, 254, 255);
+    }
+
+
+    .navbar a:hover,
+    .navbar a.active {
+        color: #d33601;
+        transition: .5s;
+    }
+
+}

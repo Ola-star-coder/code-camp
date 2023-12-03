@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/9bfd6572c2.js" crossorigin="anonymous"></script>
+<link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,500&display=swap"
+    rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <title>About</title>
+</head>
+<body>
+   <header>
+      <a href="index.html" class="logo">OlaCodeCamp</a>
+   </header>
+   <section id="about">
+      <div class="about">
+         <div class="about-img">
+            <img src="pexel.jpg" alt="people working on code" loading="lazy">
+         </div>
+         <div class="about-text">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eaque sed necessitatibus adipisci labore cupiditate, sunt atque voluptatibus! Est beatae soluta molestiae quae dolorem dolor delectus, quas eos maxime sit doloribus quaerat voluptate doloremque officiis adipisci, consequuntur sint id minima cupiditate reprehenderit in nostrum non ratione aut! Doloribus amet voluptas, soluta accusantium rem beatae veritatis veniam labore aperiam placeat omnis!quas eos maxime sit doloribus quaerat voluptate doloremque officiis adipisci, consequuntur sint id minima cupiditate
+            reprehenderit in nostrum non ratione aut! Doloribus amet voluptas, soluta accusantium rem beatae veritatis veniam labore
+            aperiam placeat omnis!
+            </p>
+         </div>
+         </div>
+   </section>
+
+   <section id="testimonials">
+    <div class="testimonial">
+      <div class="head">
+         <h1>Expert Says</h1>
+         <div class="border"></div>
+
+         <div class="row">
+           <div class="cols">
+            <div class="testimonials">
+               <img src="testimonial-1.png" alt="expert review">
+               <div class="name">
+                <h3>pera Toms</h3>  
+                </div>
+                <div class="role">
+                 <p>Full Stack Developer</p>
+                </div>
+                <div class="stars">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt architecto dignissimos quisquam  </p>      
+            </div>
+           </div> 
+          <div class="cols">
+            <div class="testimonials">
+               <img src="testimonial-2.jpg" alt="expert review">
+                <div class="name">
+                  <h3>john Toms</h3>
+                  </div>
+                  <div class="role">
+                     <p>Dev ops</p>
+                  </div>
+                  <div class="stars">
+                     <i class="fa-sharp fa-solid fa-star"></i>
+                     <i class="fa-sharp fa-solid fa-star"></i>
+                     <i class="fa-sharp fa-solid fa-star"></i>
+                     <i class="fa-sharp fa-solid fa-star"></i>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt architecto dignissimos quisquam</p>
+            </div>
+          </div>
+          <div class="cols">
+            <div class="testimonials">
+               <img src="testimonial-3.jpg" alt="expert review">
+               <div class="name">
+                  <h3>Bella Jon</h3>
+                  </div>
+                  <div class="role">
+                     <p>Frontend Developer</p>
+                  </div>
+                  <div class="stars">
+                     <i class="fa-sharp fa-solid fa-star"></i>
+                     <i class="fa-sharp fa-solid fa-star"></i>
+                     <i class="fa-sharp fa-solid fa-star"></i>
+                     <i class="fa-sharp fa-solid fa-star"></i>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deserunt architecto dignissimos quisquam</p>
+            </div>
+           </div>
+         </div>
+      </div>
+    </div>
+   </section>
+
+
+
+
+
+
+
+   <div id="sideNav">
+      <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="sign.html">Sign Up</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+         </ul>
+      </nav>
+   </div>
+   
+   <div id="menuBtn">
+      <img src="menu.png" alt="nos" id="menu">
+   </div>
+   
+   <script>
+      var menuBtn = document.getElementById("menuBtn")
+      var sideNav = document.getElementById("sideNav")
+      var menu = document.getElementById("menu")
+
+      sideNav.style.right = "-250px";
+
+      menuBtn.onclick = function () {
+         if (sideNav.style.right == "-250px") {
+            sideNav.style.right = "0";
+            menu.src = "close.png";
+         }
+         else {
+            sideNav.style.right = "-250px";
+            menu.src = "menu.png";
+         }
+      }
+
+   </script>
+</body>
+</html>

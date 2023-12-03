@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="courses.css">
+    <script src="https://kit.fontawesome.com/9bfd6572c2.js" crossorigin="anonymous"></script>
+<link
+    href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Oswald:wght@200;300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,500&display=swap"
+    rel="stylesheet">
+    <title>Courses</title>
+</head>
+<body>
+<section id="courses">
+    <div class="reviews-head">
+        <h1>Courses</h1>
+    </div>
+    <div class="service">
+        <div class="service-content">
+            <i class="fa-solid fa-code"></i>
+            <h3>Html 5</h3>
+            <h4>4 Months Course</h4>
+            <p>You will learn basics Of Html</p>
+            <p>You will learn How to Use It</p>
+           <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque eaque tenetur accusamus quaerat tempora ratione</p>
+            <button>Start Course</button>
+        </div>
+        <div class="service-content">
+            <i class="fa-solid fa-code"></i>
+            <h3>Css 3</h3>
+            <h4>4 Months Course</h4>
+            <p>You will learn basics Of Css</p>
+            <p>You will learn How to Use It</p>
+           <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatibus excepturi perspiciatis similique accusantium...</p>
+            <button>Start Course</button>
+        </div>
+        <div class="service-content">
+            <i class="fa-solid fa-code"></i>
+            <h3>Javascript</h3>
+            <h4>6 Months Course</h4>
+            <p>You will learn Javascript</p>
+            <p>You will learn How to Use It</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatibus excepturi perspiciatis</p>
+            <button>Start Course</button>
+        </div>
+        <div class="service-content">
+            <i class="fa-solid fa-code"></i>
+            <h3>Bootstrap</h3>
+            <h4>3 Months Course</h4>
+            <p>You will learn Bootstrap</p>
+            <p>You will learn How to Use It</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatibus excepturi perspiciatis</p>
+            <button>Start Course</button>
+        </div>
+    </div>
+    <div class="view-more">
+        <button class="btn"> View More/></button>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Testimonials</a></li>
+                <li><a href="sign.html">Sign Up</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="menuBtn">
+        <img src="menu.png" alt="nos" id="menu">
+    </div>
+    
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "close.png";
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src = "menu.png";
+            }
+        }
+
+    </script>
+</body>
+</html>

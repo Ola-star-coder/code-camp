@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 15px;
+    color: white;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.head {
+    padding: 20px 5%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    color: white;
+    font-size: 23px;
+    z-index: 100;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {
+    position: relative;
+    font-size: 36px;
+    color: rgb(0, 153, 255);
+    text-decoration: none;
+    margin-top: 9px;
+    font-family: cursive;
+    font-weight: 600;
+    margin-left: -20px;
+    transition: .5s;
+}
+
+.navbar a {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 24px;
+    margin: auto;
+    font-family: Goudy Old Style,
+        Garamond,
+        Hoefler Text,
+        Georgia,
+        serif;
+    ;
+    gap: 25px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+    transition: .5s;
+    color: aliceblue;
+}
+
+
+.navbar a:hover,
+.navbar a.active {
+    color: #ff7200;
+    transition: .5s;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-box {
+    background: #924d14;
+    display: flex;
+}
+
+.contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background: rgb(0, 13, 255);
+    /* color: #fff; */
+}
+
+h1 {
+    margin: 10px;
+    margin-left: 40px;
+    color: rgb(0, 153, 255);
+}
+
+.container p {
+    margin: 40px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 14px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    outline: none;
+}
+
+a {
+    color: wheat;
+    text-decoration: none;
+}
+
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: yellow;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #ff7200;
+    color: white;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 30px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.4);
+}
+
+button:hover {
+    background: #c30e0e;
+    color: yellow;
+    transition: .5s;
+}
+
+.contact-left h3 {
+    color: aqua;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.contact-right h3 {
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-size: 26px;
+}
+
+tr td:first-child {
+    padding-right: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+
+tr td:first-child {
+    padding-top: 18px;
+    font-size: 29px;
+    font-family: sans-serif;
+
+}
+
+/* RENSPONSIVE WEBPAGE  */
+
+/* MEDIA SCREEN FOR ALL  */
+
+@media screen and (max-width:1000px) {
+    body {
+        background-color: black;
+        background-image: none;
+        background-position: none;
+        background-repeat: none;
+        background-size: none;
+        font-size: 15px;
+        color: white;
+        position: relative;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    .logo {
+        position: relative;
+        font-size: 20px;
+        color: rgb(0, 153, 255);
+        text-decoration: none;
+        margin-top: 9px;
+        font-family: cursive;
+        font-weight: 600;
+        margin-left: -20px;
+        transition: .5s;
+    }
+
+    .navbar a {
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+        margin: auto;
+        font-family: Goudy Old Style,
+            Garamond,
+            Hoefler Text,
+            Georgia,
+            serif;
+        ;
+        gap: 20px;
+        float: left;
+        margin-left: 30px;
+        margin-top: 15px;
+        transition: .5s;
+        color: aliceblue;
+    }
+
+    .contact-box {
+        background: #149266;
+        display: block;
+    }
+
+
+    .contact-right {
+        flex-basis: 40%;
+        padding: 40px;
+        background: rgb(80, 82, 138);
+        /* color: #fff; */
+    }
+
+
+    label {
+        margin-bottom: 6px;
+        display: block;
+        color: rgb(17, 20, 16);
+    }
+
+    .contact-left h3 {
+        color: rgb(0, 42, 255);
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    .contact-right h3 {
+        font-weight: 500;
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+
+    tr td:first-child {
+        padding-right: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+
+    }
+
+    tr td:first-child {
+        padding-top: 18px;
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+
+    .container {
+        width: 90%;
+        margin: 50px auto;
+    }
+}
+
+/* MEDIA SCREEN FOR 300 TO 450PX */
+@media screen and (min-width:300px) and (max-width:450px) {
+    .logo {
+        display: none;
+        position: relative;
+        font-size: 15px;
+        color: rgb(0, 153, 255);
+        text-decoration: none;
+        margin-top: 9px;
+        font-family: cursive;
+        font-weight: 600;
+        margin-left: -20px;
+        transition: .5s;
+    }
+
+    .navbar a {
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        margin: auto;
+        font-family: Goudy Old Style,
+            Garamond,
+            Hoefler Text,
+            Georgia,
+            serif;
+        ;
+        gap: 20px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 15px;
+        transition: .5s;
+        color: aliceblue;
+    }
+
+    .contact-box {
+        background: #aa8fa5;
+        display: block;
+    }
+
+    .contact-right {
+        flex-basis: 40%;
+        padding: 40px;
+        background: rgb(30, 32, 107);
+        /* color: #fff; */
+    }
+
+    .contact-right h3 {
+        font-weight: 500;
+        margin-bottom: 30px;
+        font-size: 17px;
+        color: #924d14;
+        font-weight: 400;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    tr td:first-child {
+        padding-right: 20px;
+        margin-bottom: 10px;
+        font-size: 14px;
+
+    }
+
+    tr td:first-child {
+        padding-top: 18px;
+        font-size: 16px;
+        font-family: sans-serif;
+
+    }
+
+    .container {
+        width: 90%;
+        margin: 50px auto;
+    }
+}
